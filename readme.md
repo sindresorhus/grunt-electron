@@ -4,6 +4,10 @@
 
 *Issues should be reported on the `electron-packager` [issue tracker](https://github.com/maxogden/electron-packager/issues).*
 
+Please think hard if you really need grunt for this. A simple vanilla node build script would probably be better.
+
+This is mostly intended for those that have an existing grunt setup and want to integrate Electron app packaging.
+
 
 ## Install
 
