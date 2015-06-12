@@ -22,18 +22,28 @@ $ npm install --save-dev grunt-electron
 require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
 
 grunt.initConfig({
-	electron: {
-		osxBuild: {
-			options: {
-				name: 'Fixture',
-				dir: 'app',
-				out: 'dist',
-				version: '0.25.3',
-				platform: 'darwin',
-				arch: 'x64'
-			}
-		}
-	}
+    electron: {
+        osxBuild: {
+            options: {
+                name: 'Fixture',
+                dir: 'app',
+                out: 'dist',
+                version: '0.25.3',
+                platform: 'darwin',
+                arch: 'x64',
+                'version-string': {  // windows only
+                  CompanyName: 'Acme',
+                  LegalCopyright: 'Copyright 2015 Acme. All rights reserved.',
+                  FileDescription : 'App description',
+                  OriginalFilename : 'App name.exe',
+                  FileVersion : '0.0.1',
+                  ProductVersion : '0.0.1',
+                  ProductName : 'App name',
+                  InternalName : 'App name.exe'
+                }
+            }
+        }
+    }
 });
 
 grunt.registerTask('default', ['electron']);
