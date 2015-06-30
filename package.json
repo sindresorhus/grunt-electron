@@ -31,7 +31,7 @@
     "apps"
   ],
   "dependencies": {
-    "electron-packager": "^4.0.1"
+    "electron-packager": "^4.2.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
