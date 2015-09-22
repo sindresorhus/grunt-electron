@@ -3,6 +3,13 @@ var electronPackager = require('electron-packager');
 
 module.exports = function (grunt) {
 	grunt.registerMultiTask('electron', 'Package Electron apps', function () {
-		electronPackager(this.options(), this.async());
+		var done = this.async();
+		electronPackager(this.options(), function (error) {
+			if (error) {
+				grunt.warn(error);
+			} else {
+				done();
+			}
+		});
 	});
 };
