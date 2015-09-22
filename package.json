@@ -21,8 +21,6 @@
   "keywords": [
     "gruntplugin",
     "electron",
-    "atom-shell",
-    "atom",
     "package",
     "packager",
     "build",
@@ -31,13 +29,13 @@
     "apps"
   ],
   "dependencies": {
-    "electron-packager": "^5.0.0"
+    "electron-packager": "^5.1.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-nodeunit": "^0.4.1",
-    "path-exists": "^1.0.0"
+    "path-exists": "^2.0.0"
   }
 }
