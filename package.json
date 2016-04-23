@@ -29,7 +29,7 @@
     "apps"
   ],
   "dependencies": {
-    "electron-packager": "^6.0.0"
+    "electron-packager": "^7.0.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
