@@ -23,7 +23,7 @@ require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
 
 grunt.initConfig({
 	electron: {
-		osxBuild: {
+		macosBuild: {
 			options: {
 				name: 'Fixture',
 				dir: 'app',
