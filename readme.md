@@ -49,4 +49,4 @@ In addition you need to supply the `name` of your app and the `dir` where your a
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

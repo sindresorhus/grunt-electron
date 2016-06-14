@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "xo && grunt"
   },
   "files": [
     "tasks"
@@ -36,9 +36,13 @@
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-nodeunit": "^1.0.0",
-    "path-exists": "^2.0.0"
+    "path-exists": "^3.0.0",
+    "xo": "*"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
+  },
+  "xo": {
+    "local": false
   }
 }
