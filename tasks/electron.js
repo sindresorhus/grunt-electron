@@ -1,13 +1,14 @@
 'use strict';
-var electronPackager = require('electron-packager');
+const electronPackager = require('electron-packager');
 
-module.exports = function (grunt) {
+module.exports = grunt => {
 	grunt.registerMultiTask('electron', 'Package Electron apps', function () {
-		var done = this.async();
+		const done = this.async();
 
-		electronPackager(this.options(), function (err) {
+		electronPackager(this.options(), err => {
 			if (err) {
 				grunt.warn(err);
+				done();
 				return;
 			}
 
