@@ -7,7 +7,7 @@ module.exports = grunt => {
 					name: 'Fixture',
 					dir: 'test/fixture',
 					out: 'test/tmp',
-					version: '1.3.5',
+					electronVersion: '1.3.5',
 					platform: 'darwin',
 					arch: 'x64'
 				}
