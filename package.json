@@ -1,6 +1,6 @@
 {
   "name": "grunt-electron",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "Package Electron apps",
   "license": "MIT",
   "repository": "sindresorhus/grunt-electron",
