@@ -1,6 +1,6 @@
 # grunt-electron [![Build Status](https://travis-ci.org/sindresorhus/grunt-electron.svg?branch=master)](https://travis-ci.org/sindresorhus/grunt-electron)
 
-> Package [Electron](http://electron.atom.io) apps using [`electron-packager`](https://github.com/electron-userland/electron-packager)
+> Package [Electron](https://electronjs.org) apps using [`electron-packager`](https://github.com/electron-userland/electron-packager)
 
 *Issues should be reported on the `electron-packager` [issue tracker](https://github.com/electron-userland/electron-packager/issues).*
 
