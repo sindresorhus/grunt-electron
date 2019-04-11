@@ -7,8 +7,8 @@ module.exports = grunt => {
 
 		electronPackager(this.options())
 			.then(() => done())
-			.catch(err => {
-				grunt.warn(err);
+			.catch(error => {
+				grunt.warn(error);
 				done();
 			});
 	});
