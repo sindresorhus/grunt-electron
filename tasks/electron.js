@@ -2,14 +2,19 @@
 const electronPackager = require('electron-packager');
 
 module.exports = grunt => {
-	grunt.registerMultiTask('electron', 'Package Electron apps', function () {
-		const done = this.async();
+	grunt.registerMultiTask(
+		'electron',
+		'Package Electron apps',
+		async function () {
+			const done = this.async();
 
-		electronPackager(this.options())
-			.then(() => done())
-			.catch(error => {
+			try {
+				await electronPackager(this.options());
+				done();
+			} catch (error) {
 				grunt.warn(error);
 				done();
-			});
-	});
+			}
+		}
+	);
 };
