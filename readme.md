@@ -1,4 +1,4 @@
-# grunt-electron [![Build Status](https://travis-ci.org/sindresorhus/grunt-electron.svg?branch=master)](https://travis-ci.org/sindresorhus/grunt-electron)
+# grunt-electron [![(CI)](https://github.com/sindresorhus/grunt-electron/workflows/CI/badge.svg)](https://github.com/sindresorhus/grunt-electron/actions?query=workflow%3ACI)
 
 > Package [Electron](https://electronjs.org) apps using [`electron-packager`](https://github.com/electron-userland/electron-packager)
 
