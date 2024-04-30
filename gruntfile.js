@@ -9,16 +9,16 @@ module.exports = grunt => {
 					out: 'test/tmp',
 					electronVersion: '1.3.5',
 					platform: 'darwin',
-					arch: 'x64'
-				}
-			}
+					arch: 'x64',
+				},
+			},
 		},
 		nodeunit: {
-			tasks: ['test/test.js']
+			tasks: ['test/test.js'],
 		},
 		clean: {
-			test: ['test/tmp/**']
-		}
+			test: ['test/tmp/**'],
+		},
 	});
 
 	grunt.loadTasks('tasks');
@@ -29,6 +29,6 @@ module.exports = grunt => {
 		'clean',
 		'electron',
 		'nodeunit',
-		'clean'
+		'clean',
 	]);
 };

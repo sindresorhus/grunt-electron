@@ -15,6 +15,6 @@ module.exports = grunt => {
 				grunt.warn(error);
 				done();
 			}
-		}
+		},
 	);
 };

@@ -1,48 +1,52 @@
 {
-  "name": "grunt-electron",
-  "version": "12.0.0",
-  "description": "Package Electron apps",
-  "license": "MIT",
-  "repository": "sindresorhus/grunt-electron",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">= 10.12.0"
-  },
-  "scripts": {
-    "test": "xo && grunt"
-  },
-  "files": [
-    "tasks"
-  ],
-  "keywords": [
-    "gruntplugin",
-    "electron",
-    "package",
-    "packager",
-    "build",
-    "distribute",
-    "app",
-    "apps"
-  ],
-  "dependencies": {
-    "electron-packager": "^15.1.0"
-  },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-nodeunit": "^1.0.0",
-    "path-exists": "^3.0.0",
-    "xo": "*"
-  },
-  "peerDependencies": {
-    "grunt": ">=0.4.0"
-  },
-  "xo": {
-    "esnext": true
-  }
+	"name": "grunt-electron",
+	"version": "12.0.0",
+	"description": "Package Electron apps",
+	"license": "MIT",
+	"repository": "sindresorhus/grunt-electron",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"sideEffects": false,
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"test": "xo && grunt"
+	},
+	"files": [
+		"tasks"
+	],
+	"keywords": [
+		"gruntplugin",
+		"electron",
+		"package",
+		"packager",
+		"build",
+		"distribute",
+		"app",
+		"apps"
+	],
+	"dependencies": {
+		"electron-packager": "^15.1.0"
+	},
+	"devDependencies": {
+		"grunt": "^1.6.1",
+		"grunt-cli": "^1.4.3",
+		"grunt-contrib-clean": "^2.0.1",
+		"grunt-contrib-nodeunit": "^5.0.0",
+		"path-exists": "^3.0.0",
+		"xo": "^0.58.0"
+	},
+	"peerDependencies": {
+		"grunt": ">=1.0.0"
+	},
+	"xo": {
+		"rules": {
+			"unicorn/prefer-module": "off"
+		}
+	}
 }

@@ -1,20 +1,18 @@
-# grunt-electron [![(CI)](https://github.com/sindresorhus/grunt-electron/workflows/CI/badge.svg)](https://github.com/sindresorhus/grunt-electron/actions?query=workflow%3ACI)
+# grunt-electron
 
-> Package [Electron](https://electronjs.org) apps using [`electron-packager`](https://github.com/electron-userland/electron-packager)
+> Package [Electron](https://electronjs.org) apps using [`electron-packager`](https://github.com/electron/packager)
 
-*Issues should be reported on the `electron-packager` [issue tracker](https://github.com/electron-userland/electron-packager/issues).*
+*Issues should be reported on the `electron-packager` [issue tracker](https://github.com/electron/packager/issues).*
 
-Please think hard if you really need grunt for this. A simple vanilla node build script would probably be better.
+Please think hard if you really need Grunt for this. A simple vanilla Node.js build script would probably be better.
 
-This is mostly intended for those that have an existing grunt setup and want to integrate Electron app packaging.
-
+This is mostly intended for those that have an existing Grunt setup and want to integrate Electron app packaging.
 
 ## Install
 
+```sh
+npm install --save-dev grunt-electron
 ```
-$ npm install --save-dev grunt-electron
-```
-
 
 ## Usage
 
@@ -39,14 +37,8 @@ grunt.initConfig({
 grunt.registerTask('default', ['electron']);
 ```
 
-
 ## Options
 
-See the `electron-packager` [options](https://github.com/electron-userland/electron-packager#usage).
+See the `electron-packager` [options](https://github.com/electron/electron-packager#usage).
 
 In addition you need to supply the `name` of your app and the `dir` where your app is located.
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
